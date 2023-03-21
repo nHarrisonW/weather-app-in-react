@@ -1,14 +1,11 @@
-import { getWeather } from "../London-Flag/london";
-
-
-
+import { getWeather } from "../../../Services/data";
 
 
 export default function Istanbul() {
   return (
     <>
     <button className='flags' id='IstanbulBtn' onClick={() => getWeather('Istanbul')}>
-                Istanbul
+                
             </button>
     </>
   )

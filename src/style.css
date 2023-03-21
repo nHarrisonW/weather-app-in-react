@@ -33,6 +33,7 @@
     width: 9vw;
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 3vw;
 }
 
 #LondonBtn {
@@ -65,3 +66,39 @@
 #ShanghaiBtn {
     background-image: url(./Assets-flags/china-flag.webp);
 }
+#SeoulBtn {
+    background-image: url(./Assets-flags/sk-flag.webp);
+}
+#TokyoBtn {
+    background-image: url(./Assets-flags/jap-flag.png);
+}
+#LABtn {
+    background-image: url(./Assets-flags/usa-flag.png);
+}
+#MexicoCityBtn {
+    background-image: url(./Assets-flags/mex-flag.webp);
+}
+#TorontoBtn {
+    background-image: url(./Assets-flags/can-flag.png);
+}
+#SydneyBtn {
+    background-image: url(./Assets-flags/aus-flag.webp);
+}
+#SaoPaoloBtn {
+    background-image: url(./Assets-flags/brz-flag.webp);
+}
+#BuenosAiresBtn {
+    background-image: url(./Assets-flags/arg-flag.webp);
+}
+#RandomCityBtn {
+    background-image: url(./Assets-flags/random-icon.png);
+}
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  button {
+    position: relative;
+    
+  }

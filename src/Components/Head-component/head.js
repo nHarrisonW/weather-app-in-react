@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Row } from 'react-bootstrap';
-import { getWeather } from '../Flag-components/London-Flag/london';
+import { getWeather } from '../../Services/data';
 
 export default function Head() {
   const handleSubmit = (event) => {

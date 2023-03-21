@@ -20,6 +20,16 @@ import Karachi from './Components/Flag-components/Karachi-flag/karachi';
 import Dhaka from './Components/Flag-components/Dhaka-flag/dhaka';
 import Jakarta from './Components/Flag-components/Jakarta-flag/jakarta';
 import Shanghai from './Components/Flag-components/Shanghai-flag/shanghai';
+import Seoul from './Components/Flag-components/Seoul-flag/seoul';
+import Tokyo from './Components/Flag-components/Tokyo-flag/tokyo';
+import LosAngeles from './Components/Flag-components/LA-flag/la';
+import MexicoCity from './Components/Flag-components/Mx-city-flag/mx-city';
+import Toronto from './Components/Flag-components/Toronto-flag/toronto';
+import Sydney from './Components/Flag-components/Sydney-flag/sydney';
+import SaoPaolo from './Components/Flag-components/Sao-paolo-flag/sao-paolo';
+import BuenosAires from './Components/Flag-components/Buenos-aires-flag/buenos-aires';
+import RandomCity from './Components/Flag-components/Random-flag/random-city';
+import Favorites from './Components/Flag-components/Favorites-flag/favorite';
 
 
 
@@ -40,8 +50,8 @@ export default function App() {
         </Row>
         <Row>
           <div className='dummy'>
-            < NewDelhi />
             < Karachi />
+            < NewDelhi />
             < Dhaka />
             < Jakarta />
             < Shanghai />
@@ -49,11 +59,20 @@ export default function App() {
         </Row>
         <Row>
           <div className='dummy'>
-            < NewDelhi />
-            < Karachi />
-            < Dhaka />
-            < Jakarta />
-            < Shanghai />
+            < Seoul />
+            < Tokyo />
+            < LosAngeles />
+            < MexicoCity />
+            < Toronto />
+          </div>
+        </Row>
+        <Row>
+          <div className='dummy'>
+            < Sydney />
+            < SaoPaolo />
+            < BuenosAires />
+            < RandomCity />
+            < Favorites />
           </div>
         </Row>
       </Container>
