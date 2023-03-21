@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap'); /* weights 200, 400, 700 
+ font-family: 'Josefin Sans', sans-serif; */
+
+.App-bg {
+    background: linear-gradient(#23343C,#0DCDEC, #23343C);
+    background-size: cover;
+    height: 1200px;
+}
+.dummy {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 0;
+}
+.head h1{
+    text-align: center;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.671) 1px 1px 5px;
+    font-size: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#searchForm {
+    justify-content: space-between;
+    display: flex;
+    margin: 30px 0px;
+}
+#searchBar {
+    width: 80% !important;
+}
+.flags {
+    border: 2px solid black; border-radius: 5px;
+    height: 6vw;
+    width: 9vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#LondonBtn {
+    background-image: url(./Assets-flags/england-flag.webp);
+}
+#ParisBtn {
+    background-image: url(./Assets-flags/france-flag.webp);
+}
+#CairoBtn {
+    background-image: url(./Assets-flags/egypt-flag.png);
+}
+#MoscowBtn {
+    background-image: url(./Assets-flags/russia-flag.png);
+}
+#IstanbulBtn {
+    background-image: url(./Assets-flags/turkey-flag.png);
+}
+#NewDelhiBtn {
+    background-image: url(./Assets-flags/india-flag.png);
+}
+#KarachiBtn {
+    background-image: url(./Assets-flags/pakistan-flag.webp);
+}
+#DhakaBtn {
+    background-image: url(./Assets-flags/bangladesh-flag.png);
+}
+#JakartaBtn {
+    background-image: url(./Assets-flags/indonesia-flag.webp);
+}
+#ShanghaiBtn {
+    background-image: url(./Assets-flags/china-flag.webp);
+}
