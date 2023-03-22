@@ -64,11 +64,9 @@ export default function RandomCity() {
   };
 
   return (
-    <>
-
-      <button className='flags' id='RandomCityBtn' onClick={handleButtonClick}>
-
-      </button>
-    </>
+    <div>
+        <h3>Random City</h3>
+      <button className='flags' id='RandomCityBtn' onClick={handleButtonClick}>🔀</button>
+    </div>
   );
 }

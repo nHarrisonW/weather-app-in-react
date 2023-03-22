@@ -21,6 +21,7 @@ export default function Head() {
             <button>Save to faves</button>
           </form>
         </Row>
+        <h2>Get Weather Around the World!</h2>
     </div>
   );
 }

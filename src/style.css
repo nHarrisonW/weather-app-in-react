@@ -5,19 +5,21 @@
 .App-bg {
     background: linear-gradient(#23343C,#0DCDEC, #23343C);
     background-size: cover;
-    height: 1200px;
 }
 .dummy {
     display: flex;
     justify-content: space-between;
-    margin: 2vw 0;
+    margin: 1vw 0;
 }
-.head h1{
+.head {
     text-align: center;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.671) 1px 1px 5px;
-    font-size: 100px;
     font-family: 'Josefin Sans', sans-serif;
+}
+.head h1 {
+    font-size: 80px;
+    padding-top: 1vw;
 }
 #searchForm {
     justify-content: space-between;
@@ -35,7 +37,13 @@
     background-repeat: no-repeat;
     font-size: 3vw;
 }
-
+#favesListBtn {
+    background-color: #23343C;
+    color: white;
+}
+#RandomCityBtn {
+    background-color: #23343C;
+}
 #LondonBtn {
     background-image: url(./Assets-flags/england-flag.webp);
 }
@@ -90,9 +98,6 @@
 #BuenosAiresBtn {
     background-image: url(./Assets-flags/arg-flag.webp);
 }
-#RandomCityBtn {
-    background-image: url(./Assets-flags/random-icon.png);
-}
 .label {
     position: absolute;
     top: 0;
@@ -100,5 +105,26 @@
   }
   button {
     position: relative;
-    
+    background-color: #23343C;
+    color: white;
+  }
+  .footer-text {
+    text-align: center;
+    color: rgb(205, 205, 205);
+    padding: 10px;
+    display: table;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .footer-text a{
+    color: rgb(205, 205, 205);
+  }
+  .coop {
+
+  }
+  h3 {
+    font-size: 18px !important;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.671) 1px 1px 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 5px !important;
   }

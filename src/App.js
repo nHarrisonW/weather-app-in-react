@@ -30,6 +30,8 @@ import SaoPaolo from './Components/Flag-components/Sao-paolo-flag/sao-paolo';
 import BuenosAires from './Components/Flag-components/Buenos-aires-flag/buenos-aires';
 import RandomCity from './Components/Flag-components/Random-flag/random-city';
 import Favorites from './Components/Flag-components/Favorites-flag/favorite';
+import Footer from './Components/Foot-component/foot';
+import CurrentWeatherCard from './Components/Weather-card-components/Current-weather/current-weather';
 
 
 
@@ -74,6 +76,8 @@ export default function App() {
             < RandomCity />
             < Favorites />
           </div>
+            < Footer />
+            
         </Row>
       </Container>
     </div>
