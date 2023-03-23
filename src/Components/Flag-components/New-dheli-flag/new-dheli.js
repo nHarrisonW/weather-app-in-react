@@ -4,9 +4,7 @@ export default function NewDelhi() {
     return (
         <div>
         <h3>New Delhi</h3>
-            <button className='flags' id='NewDelhiBtn' onClick={() => getWeather('New Delhi')}>
-                
-            </button>
+            <button className='flags' id='NewDelhiBtn' onClick={() => getWeather('New Delhi')}></button>
         </div>
     );
 }

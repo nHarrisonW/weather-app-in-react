@@ -14,10 +14,13 @@ export async function getWeather(city) {
     const currentWeatherData = currentWeatherResponse.data;
     const city = currentWeatherData.name;
     const temperature = Math.ceil(currentWeatherData.main.temp);
+    const highTemperature = Math.ceil(currentWeatherData.main.temp_max);
+    const lowTemperature = Math.ceil(currentWeatherData.main.temp_min);
     const windSpeed = Math.ceil(currentWeatherData.wind.speed);
     const description = currentWeatherData.weather[0].description;
     const country = currentWeatherData.sys.country;
     const timezone = currentWeatherData.timezone / 3600;
+
     console.log(`Timezone: ${timezone} hours`);
     console.log(`City: ${city}`);
     console.log(`Country: ${country}`);
@@ -46,8 +49,9 @@ export async function getWeather(city) {
         if (date === itemDate) {
           const highTemp = Math.ceil(item.main.temp_max);
           const pop = item.pop;
-          console.log(`  High Temperature: ${highTemp} °C, Chance of Rain: ${pop}%`);
+          console.log(`High Temperature: ${highTemp} °C, Chance of Rain: ${pop}%`);
         }
+        return forecastData;
       });
     });
 
@@ -55,12 +59,13 @@ export async function getWeather(city) {
     const currentWeather = {
       city,
       temperature,
+      highTemperature,
+      lowTemperature,
       windSpeed,
       description,
       country,
       timezone,
-    };
-    return currentWeather;
+    };);
 
   } catch (error) {
     console.error(error);

@@ -1,5 +1,5 @@
 
-
+import { useState, useEffect } from 'react';
 
 import './style.css';
 // Bootstrap imports
@@ -9,6 +9,8 @@ import {
   Row
 } from 'react-bootstrap';
 // My components
+import { getWeather } from './Services/data';
+
 import Head from './Components/Head-component/head';
 import London from './Components/Flag-components/London-Flag/london';
 import Paris from './Components/Flag-components/Paris-flag/paris';
@@ -32,11 +34,19 @@ import RandomCity from './Components/Flag-components/Random-flag/random-city';
 import Favorites from './Components/Flag-components/Favorites-flag/favorite';
 import Footer from './Components/Foot-component/foot';
 import CurrentWeatherCard from './Components/Weather-card-components/Current-weather/current-weather';
+import ParentComponent from './Components/Weather-card-components/Current-weather/current-weather';
+import Weather from './Components/Weather-card-components/Weather-app/weather-app';
+
 
 
 
 
 export default function App() {
+  // const [currentWeather, setCurrentWeather] = useState(null);
+
+  // const handleGetWeather = async (city) => {
+  //   const data = await getWeather(city);
+  //   setCurrentWeather(data);
   return (
     <div className='App-bg'>
       <Container>
