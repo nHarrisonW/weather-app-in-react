@@ -1,4 +1,7 @@
 
+
+// Harrison project has so much potential, unfortunately due to a short period of time he got, he didnt build it to it's full potential. But still a good overall project, I get the idea and i hope the TAs and devs would too. Good job!
+
 import { useState, useEffect } from 'react';
 
 import './style.css';
@@ -42,11 +45,6 @@ import Weather from './Components/Weather-card-components/Weather-app/weather-ap
 
 
 export default function App() {
-  // const [currentWeather, setCurrentWeather] = useState(null);
-
-  // const handleGetWeather = async (city) => {
-  //   const data = await getWeather(city);
-  //   setCurrentWeather(data);
   return (
     <div className='App-bg'>
       <Container>

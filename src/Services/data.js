@@ -65,7 +65,8 @@ export async function getWeather(city) {
       description,
       country,
       timezone,
-    };);
+    };
+    return currentWeather;
 
   } catch (error) {
     console.error(error);

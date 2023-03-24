@@ -55,18 +55,35 @@ export default function RandomCity() {
     "Rio de Janeiro",
   ];
 
-  const [currentCity, setCurrentCity] = useState(cities[Math.floor(Math.random() * cities.length)]);
+  const [currentCity, setCurrentCity] = useState(
+    cities[Math.floor(Math.random() * cities.length)]
+  );
+  const [weatherData, setWeatherData] = useState(null);
 
-  const handleButtonClick = () => {
+  const handleButtonClick = async () => {
     const newCity = cities[Math.floor(Math.random() * cities.length)];
     setCurrentCity(newCity);
-    getWeather(newCity);
+    const data = await getWeather(newCity);
+    setWeatherData(data);
   };
 
   return (
     <div>
-        <h3>Random City</h3>
-      <button className='flags' id='RandomCityBtn' onClick={handleButtonClick}>🔀</button>
+      <h3>Random City</h3>
+      <button className="flags" id="RandomCityBtn" onClick={handleButtonClick}>
+        🔀
+      </button>
+      {weatherData && (
+        <div className="data">
+          <p>City: {weatherData.city}</p>
+          <p>Country: {weatherData.country}</p>
+          <p>Temperature: {weatherData.temperature} °C</p>
+          <p>High Temperature: {weatherData.highTemperature} °C</p>
+          <p>Low Temperature: {weatherData.lowTemperature} °C</p>
+          <p>Wind Speed: {weatherData.windSpeed} m/s</p>
+          <p>Description: {weatherData.description}</p>
+        </div>
+      )}
     </div>
   );
 }

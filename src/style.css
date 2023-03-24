@@ -18,7 +18,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 .head h1 {
-    font-size: 8vw;
+    font-size: 5vw;
     padding-top: 2vw;
     margin: 0;
 }
@@ -143,4 +143,15 @@
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     background-color: #c4c4c4b1;
+}
+
+.data {
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: black 1px 1px 5px;
+    color: white; 
+    background-color: #c4c4c4d0;
+    position: absolute;
+    z-index: 9999;
+    margin-top: -6vw;
+    font-size: 1vw;
 }
