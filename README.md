@@ -1,3 +1,5 @@
+// Harrison project has so much potential, unfortunately due to a short period of time he got, he didnt build it to it's full potential. But still a good overall project, I get the idea and i hope the TAs and devs would too. Good job!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
