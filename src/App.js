@@ -36,9 +36,6 @@ import BuenosAires from './Components/Flag-components/Buenos-aires-flag/buenos-a
 import RandomCity from './Components/Flag-components/Random-flag/random-city';
 import Favorites from './Components/Flag-components/Favorites-flag/favorite';
 import Footer from './Components/Foot-component/foot';
-import CurrentWeatherCard from './Components/Weather-card-components/Current-weather/current-weather';
-import ParentComponent from './Components/Weather-card-components/Current-weather/current-weather';
-import Weather from './Components/Weather-card-components/Weather-app/weather-app';
 
 
 
